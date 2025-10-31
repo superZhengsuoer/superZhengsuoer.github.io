@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="shortcut icon" href="./assets/public/favicon.svg"/>
+</head>
+<body>
+    <canvas class="fireworks"></canvas>
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo"><img src="./assets/public/logo_text.svg"></a>
+            <div class="menu">
+                <li class="magical btn " onclick="window.location.href='./index.html'">首页</li>
+                <li class="magical btn " onclick="window.location.href='./work.html'">作品集</li>
+                <li class="magical btn nav" onclick="window.location.href='./about.html'">关于我</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <li class="magical btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <li class="magical btn " onclick="window.location.href='./index.html'">首页</li>
+                    <li class="magical btn" onclick="window.location.href='./work.html'">作品集</li>
+                    <li class="magical btn nav" onclick="window.location.href='./about.html'">关于我</li>
+                </div>
+            </div>
+        </div>
+        <blockquote><img src="./assets/public/logo.svg"></blockquote>
+    </div>
+    <div class="about">
+        <div class="about-top">
+            <div class="about-name">郑佳琦 / Gary</div>
+            <div class="about-info">
+                <div class="about-info-left">
+                    <div class="about-info-title">关于我</div>
+                    <div class="introduce-desc">
+                        <br>🥳  我有4年UI/平面设计经验，参与及主导过多个过多个Pc、App和运营平面设计项目，精通从用户调研到高保真原型的全流程交付，能力垂度和广度均有得到充分锻炼。<br>
+                        <br>👀  擅于从体验视角进行思考，能将抽象目标转化为具体的设计方案；擅长用户分析、用户调研、数据分析，通过方法论提炼产品需求，准确梳理设计方向与策略，并参与原型、交互和开发等阶段工作。<br>
+                        <br>🔧  常用工具：Flgma、JSDesign、AIGC、OpenAI、PS、Ai、Cdr、X-Mind、Xd等.<br>
+                        <br>🎧  兴趣爱好：喜欢阅读，喜欢听歌，喜欢去参观各种展会，不仅享受过程也能提供灵感，目前在不断学习AI大模型和AIGC的知识；擅长通过各种渠道获取最新优质信息，平时也会唱唱歌，去运动和旅游，来净化自己。最近在学习摄影来丰富自己，希望很快自己也能拍出大片<br>
+                    </div>
+                </div>
+                <div class="about-info-right">
+                    <div class="contact">
+                        <div class="about-info-title">Contact</div>
+                        <div class="contact-desc">
+                            <div class="list">
+                                <div class="list-label">Email：</div>
+                                <div href="javascript:" class="list-value" id="email" tabindex="0" role="button"  title="点击复制邮箱">
+                                    <a id="emailCopied">846699852@qq.com</a>
+                                </div>
+                                <span class="list-value copied">copied&nbsp;✓</span>
+                            </div>
+                            <div class="list">
+                                <div class="list-label">Wechat：</div>
+                                <div class="list-value">
+                                    <a class="tooltip">17791714370
+                                        <div class="tooltip-box">
+                                            <img src="./assets/about/wechat.png">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume">
+                        <div class="about-info-title resume-title">个人简历</div>
+                        <div class="resume-desc">
+                            <div class="resume-desc-helptext">郑佳琦 - 4年设计经验 - 17791714370</div>
+                            <div class="magical resume-btn"><a href="https://o0scleq764o.feishu.cn/file/Mwjsb7awEoxWSCxxHK1cda24nGe?from=from_copylink" target="_blank">去查看 ></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-middle">
+            <div class="power">
+                <div class="list-00">
+                    <div class="magical power-card-number">
+                        <a>
+                            <div class="card-title">4</div>
+                            <div class="card-text">工作年龄</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card-number">
+                        <a>
+                            <div class="card-title">40⁺</div>
+                            <div class="card-text">项目</div>
+                        </a>
+                    </div>
+                    
+                    
+                </div>
+                <div class="list-01">
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/abstract.svg')"></div>
+                            <div class="card-text">深度学习谷歌 / 苹果 等大厂设计规范，对网页和移动端规范熟练掌握</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/menu.svg')"></div>
+                            <div class="card-text">熟练运用figma变量/变体/自动布局等功能制作设计规范，大幅提升效率</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/code.svg')"></div>
+                            <div class="card-text">参与过多个0-1项目，对互联网化的工作链路上下游有较深认知和理解</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/pin.svg')"></div>
+                            <div class="card-text">擅长换位思考，运用开发思维来做设计，提高沟通效率</div>
+                        </a>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+        <div class="about-bottom">
+            <div class="experience">
+               
+                <div class="item">
+                    <div class="time">❖ 2024.03-2025.09</div>
+                    <div class="name">
+                        <div class="company">深圳俊驰塑化有限公司</div>
+                        <div class="job"></div>
+                    </div>
+                    <div class="project-experience">
+                        <div class="item">
+                            <div class="title">UI设计/电商运营</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>主导从 0→1 搭建国内/国际官网，协同团队完成市场调研/用户研究/用户使用场景分析等，根据目标人群及特征，深挖用户痛点需求.</li>
+                                    <li>负责运营阿里国际站和环球资源站平台，分析店铺数据及用户画像，重新设计产品详情页，制定商品上新/关键词优化/推广策略.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="title">工作业绩</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>通过官网的搭建及升级，同比2023年销售咨询量提升30%+，提高了20%+意向商机量，直接贡献于订单量增长10%.</li>
+                                    <li>建立各类设计规范及工作模版，加强工作规范化并提升团队专业性；针对目标用户优化整体设计，加强用户留存率.</li>
+                                </ul>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="time">❖ 2022.05-2023.01</div>
+                    <div class="name">
+                        <div class="company">西安易朗文化传播有限公司</div>
+                        <div class="job"></div>
+                    </div>
+                    <div class="project-experience">
+                        <div class="item">
+                            <div class="title">UI/平面设计</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>负责小程序(卡施达)界面的设计和维护，协同开发团队进行设计落地.</li>
+                                    <li>根据用户需求制定OPPO及荣耀新产品设计策略,跟进关键方案产出;负责公司微信公众号H5页面设计;输出平面及物料设计(海报/画册/LOGO等).</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="title">工作业绩</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>通过多次界面维护升级，实现用户次日留存率提升25%.</li>
+                                    <li>个人主导设计项目20+，包含生活服务、医疗养生、电商、金融等领域.</li>
+                                </ul>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+            <div class="copyright">
+                <div>by Asorn</div>
+                <span>|</span>
+                <div class="fillings">
+                    <a href="./about.html" target="_blank">Gary</a>
+                </div>
+                <span>|</span>
+                <div class="friends">
+                    <a href="https://www.zcool.com.cn/u/20109136" target="_blank">站酷</a>
+                </div>
+            </div>
+        </div>
+    <div class="widget">
+        <div class="shape-light"></div>
+        <div class="shape-star">
+            <div class="rising-stars rising-stars-visible">
+                <div style="height:1px;width:1px"></div>
+                <div style="height:2px;width:2px"></div>
+                <div style="height:1px;width:1px"></div>
+            </div>
+        </div>
+        <div class="shape-earth"></div>
+    </div>
+</body>
+<script src="./js/main.min.js"></script>
+<script src='./js/anime.js'></script>
+<script src='./js/firework.js'></script>
+</html>

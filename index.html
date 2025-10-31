@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="shortcut icon" href="./assets/public/favicon.svg"/>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body>
+    <canvas class="fireworks"></canvas>
+    
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo"><img src="./assets/public/logo_text.svg"></a>
+            <div class="menu">
+                <li class="magical btn nav" onclick="window.location.href='./index.html'">首页</li>
+                <li class="magical btn" onclick="window.location.href='./work.html'">作品集</li>
+                <li class="magical btn" onclick="window.location.href='./about.html'">关于我</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <li class="magical btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <li class="magical btn nav" onclick="window.location.href='./index.html'">首页</li>
+                    <li class="magical btn" onclick="window.location.href='./work.html'">作品集</li>
+                    <li class="magical btn" onclick="window.location.href='./about.html'">关于我</li>
+                </div>
+            </div>
+        </div>
+        <blockquote><img src="./assets/public/logo.svg"></blockquote>
+    </div>
+    <div class="index">
+        <div class="hello">
+            <div class="title">
+                <div class="title-hi">你好，我是</div>
+                <a class="title-name" href="http://127.0.0.1:5500/about.html">郑佳琦</a>
+            </div>
+            <div class="hello-desc" id="typed"></div>
+        </div>
+        <div class="content-divider"></div>
+        <div class="quickly-link">
+            <div class="title-hi">常用工具</div>
+            <div class="loader"></div>
+            <div class="link-card">
+                <div class="link-card-list">
+                    <!-- Pinterest  -->
+                    <div class="magical link-card-item" style="--mouse-x: 1229.8000030517578px; --mouse-y: 57.199981689453125px;">
+                        <a href="https://www.pinterest.com/" target="_blank">
+                            <img src="\assets\index\pinterest.png" alt="">
+                            <div class="info">
+                                <div class="info-title">Pinterest</div>
+                                <div class="info-desc">创意灵感图片社交分享平台</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    <div class="show" style="opacity: 0;"></div></div>
+                    <!-- behance -->
+                    <div class="magical link-card-item" style="--mouse-x: 901.7999877929688px; --mouse-y: 57.199981689453125px;">
+                        <a href="https://www.behance.net/" target="_blank">
+                            <img src="./assets/index/behance.png" alt="">
+                            <div class="info">
+                                <div class="info-title">Behance</div>
+                                <div class="info-desc">全球设计师作品展示社区</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    <div class="show" style="opacity: 0;"></div></div>
+                    <!-- 站酷 -->
+                    <div class="magical link-card-item" style="--mouse-x: 573.7999877929688px; --mouse-y: 57.199981689453125px;">
+                        <a href="https://www.zcool.com.cn/" target="_blank">
+                            <img src="./assets/index/站酷网.png" alt="">
+                            <div class="info">
+                                <div class="info-title">站酷网</div>
+                                <div class="info-desc">设计师交流学习资源平台</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    <div class="show" style="opacity: 0;"></div></div>
+                    <!-- 优设网-->
+                    <div class="magical link-card-item" style="--mouse-x: 1229.8000030517578px; --mouse-y: -38.800018310546875px;">
+                        <a href="https://www.uisdc.com/" target="_blank">
+                            <img src="./assets/index/优设网.png" alt="">
+                            <div class="info">
+                                <div class="info-title">优设网</div>
+                                <div class="info-desc">设计知识技能分享网站</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    <div class="show" style="opacity: 0;"></div></div>
+                   <!-- moonvy -->
+                    <div class="magical link-card-item" style="--mouse-x: 573.7999877929688px; --mouse-y: 57.199981689453125px;">
+                        <a href="https://moonvy.com/blog/" target="_blank">
+                            <img src="./assets/index/moonvy.png" alt="">
+                            <div class="info">
+                                <div class="info-title">Moonvy</div>
+                                <div class="info-desc">月维素材设计周刊</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    <div class="show" style="opacity: 0;"></div></div>
+                    <!-- 美叶UI -->
+                    <div class="magical link-card-item" style="--mouse-x: 573.7999877929688px; --mouse-y: -38.800018310546875px;">
+                        <a href="https://www.meiye.art/" target="_blank">
+                            <img src="./assets/index/美叶UI.png" alt="">
+                            <div class="info">
+                                <div class="info-title">美叶UI</div>
+                                <div class="info-desc">UI 设计素材资源平台</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    <div class="show" style="opacity: 0;"></div></div>
+                    <!-- Mobbin -->
+                    <div class="magical link-card-item" style="--mouse-x: 1229.8000030517578px; --mouse-y: -134.79998779296875px;">
+                        <a href="https://mobbin.com/" target="_blank">
+                            <img src="./assets/index/Mobbin.png" alt="">
+                            <div class="info">
+                                <div class="info-title">Mobbin</div>
+                                <div class="info-desc">APP 界面设计参考平台</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    <div class="show" style="opacity: 0;"></div></div>
+                    <!-- dribbble -->
+                    <div class="magical link-card-item" style="--mouse-x: 901.7999877929688px; --mouse-y: -134.79998779296875px;">
+                        <a href="https://dribbble.com/" target="_blank">
+                            <img src="./assets/index/dribbble.png" alt="">
+                            <div class="info">
+                                <div class="info-title">dribbble</div>
+                                <div class="info-desc">设计师作品交流社区</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    <div class="show" style="opacity: 0;"></div></div>
+                    <!-- 花瓣网 -->
+                    <div class="magical link-card-item" style="--mouse-x: 573.7999877929688px; --mouse-y: -134.79998779296875px;">
+                        <a href="https://huaban.com/" target="_blank">
+                            <img src="./assets/index/花瓣网.png" alt="">
+                            <div class="info">
+                                <div class="info-title">花瓣网</div>
+                                <div class="info-desc">创意灵感素材采集网站</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    <div class="show" style="opacity: 0;"></div></div>
+                    
+                    
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 8V0H4.5V8H3.5Z" fill="#62616F"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4.5H0V3.5H8V4.5Z" fill="#62616F"></path>
+                </svg>
+                <div class="link-card-list">
+                     <!-- figma -->
+                    <div class="magical link-card-item">
+                        <a href="https://www.figma.com/login?is_not_gen_0=true&resource_type=team" target="_blank">
+                            <img src="./assets/index/figma.png" alt="">
+                            <div class="info">
+                                <div class="info-title">Figma</div>
+                                <div class="info-desc">我的常用设计工具</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                     <!-- ChatGPT -->
+                    <div class="magical link-card-item">
+                        <a href="https://chatgpt.com/" target="_blank">
+                            <img src="./assets/index/ChatGPT.png" alt="">
+                            <div class="info">
+                                <div class="info-title">ChatGPT</div>
+                                <div class="info-desc">我的常用AI对话平台</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                     <!-- 即梦AI -->
+                    <div class="magical link-card-item">
+                        <a href="https://jimeng.jianying.com/ai-tool/home" target="_blank">
+                            <img src="./assets/index/即梦AI.png" alt="">
+                            <div class="info">
+                                <div class="info-title">即梦AI</div>
+                                <div class="info-desc">我的常用AI创意设计生成平台</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="footer">
+            <div class="copyright">
+                <div>by Asorn</div>
+                <span>|</span>
+                <div class="fillings">
+                    <a href="./about.html" target="_blank">Gary</a>
+                </div>
+                <span>|</span>
+                <div class="friends">
+                    <a href="https://www.zcool.com.cn/u/20109136" target="_blank">站酷</a>
+                </div>
+            </div>
+        </div>
+    <div class="widget">
+        <div class="shape-light"></div>
+        <div class="shape-star">
+            <div class="rising-stars rising-stars-visible">
+                <div style="height:1px;width:1px"></div>
+                <div style="height:2px;width:2px"></div>
+                <div style="height:1px;width:1px"></div>
+            </div>
+        </div>
+        <div class="shape-earth"></div>
+    </div>
+</body>
+<script>
+    // 打字效果，感谢 typed.js: https://mattboldt.github.io/typed.js/docs/
+    const options = {
+        strings: [
+            ">_ 欢迎来到我的个人网站 ^1000",
+            
+            
+        ],
+        typeSpeed: 50, // 打印速度
+        backSpeed: 30, // 回退速度
+        startDelay: 300, // 开始之前的延迟300毫秒
+        loop: true, // 是否循环
+        showCursor: false, // 不显示光标
+    };
+    const typed = new Typed('#typed', options);
+</script>
+<script src="./js/main.min.js"></script>
+<script src='./js/anime.js'></script>
+<script src='./js/firework.js'></script>
+</html>
